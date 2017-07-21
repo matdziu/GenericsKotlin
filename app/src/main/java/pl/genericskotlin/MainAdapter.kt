@@ -4,7 +4,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 
-class MainAdapter(val itemList: List<RecyclerItem<RecyclerView.ViewHolder>>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class MainAdapter(val itemList: List<RecyclerItem>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun getItemViewType(position: Int): Int {
         return itemList[position].getItemViewType()
